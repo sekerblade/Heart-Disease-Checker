@@ -5,8 +5,8 @@ from main import user_input_feature
 col1, col2, col3 = st.columns([1,2,3])
 
 col1.page_link("main.py", label="หน้าหลัก", icon="🏠")
-col2.page_link("pages/about.py", label="ข้อมูลเกี่ยวกับโรคหัวใจ", icon="1️⃣")
-col3.page_link("pages/introduction.py", label="ติดต่อผู้เชี่ยวชาญ", icon="2️⃣", disabled=False)
+col2.page_link("pages/about-heart-disease.py", label="ข้อมูลเกี่ยวกับโรคหัวใจ", icon="1️⃣")
+col3.page_link("pages/information.py", label="ติดต่อผู้เชี่ยวชาญ", icon="2️⃣", disabled=False)
 
 st.sidebar.image("images/heart-fav.png", width=100)
 
