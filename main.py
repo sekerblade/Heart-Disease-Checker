@@ -306,7 +306,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 with col1:
-    submit = st.button(label='ทำนาย', type="primary", on_click=click_button, help='กดปุ่มเพื่อทำนายผลลัพธ์')
+    #submit = st.button(label='ทำนาย', type="primary", on_click=click_button, help='กดปุ่มเพื่อทำนายผลลัพธ์')
+    submit = st.button(label='ทำนาย', on_click=click_button, help='กดปุ่มเพื่อทำนายผลลัพธ์')
     if submit:
         if final_result_asfloat < 50.0:
          st.markdown(
