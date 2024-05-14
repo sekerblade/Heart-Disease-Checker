@@ -293,7 +293,18 @@ final_result = (predictions*100)
 final_result_asfloat = final_result[0].astype(float)
 
 col1 , col2 = st.columns([1, 2],gap="large")
-
+# Custom CSS for green button
+st.markdown(
+    """
+    <style>
+    .stButton>button {
+        background-color: green;
+        color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 with col1:
     submit = st.button(label='ทำนาย', type="primary", on_click=click_button, help='กดปุ่มเพื่อทำนายผลลัพธ์')
     if submit:
