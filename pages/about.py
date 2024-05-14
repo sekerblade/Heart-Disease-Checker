@@ -6,7 +6,7 @@ col1, col2, col3 = st.columns([1,2,3])
 
 col1.page_link("main.py", label="หน้าหลัก", icon="🏠")
 col2.page_link("pages/about.py", label="ข้อมูลเกี่ยวกับโรคหัวใจ", icon="1️⃣")
-col3.page_link("pages/introducetion.py", label="ติดต่อผู้เชี่ยวชาญ", icon="2️⃣", disabled=False)
+col3.page_link("pages/introduction.py", label="ติดต่อผู้เชี่ยวชาญ", icon="2️⃣", disabled=False)
 
 st.title("ข้อมูลที่เกี่ยวข้องกับโรคหัวใจ")
 # st.sidebar.title("หน้าต่างนำทาง")
@@ -19,7 +19,7 @@ st.title("ข้อมูลที่เกี่ยวข้องกับโ�
 
 
 # Your content goes here
-st.sidebar.image("images/heart-sidebar.png", width=100)
+st.sidebar.image("images/heart-fav.png", width=100)
 # Table of Contents
 st.sidebar.title("ตารางเนื้อหา")
 st.sidebar.markdown("[โรคหัวใจ (Heart Disease)](#2e7ff63f)")
