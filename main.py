@@ -294,7 +294,11 @@ final_result_asfloat = final_result[0].astype(float)
 
 col1 , col2 = st.columns([1, 2],gap="large")
 # Custom CSS for green button
-st.markdown("""
+
+with col1:
+    submit = st.button(label='ทำนาย', type="primary", on_click=click_button, help='กดปุ่มเพื่อทำนายผลลัพธ์')
+    #submit = st.button(label='ทำนาย', on_click=click_button, help='กดปุ่มเพื่อทำนายผลลัพธ์')
+    st.markdown("""
     <style>
     .stButton > button {
         background-color: green !important;
@@ -302,10 +306,6 @@ st.markdown("""
     }
     </style>
     """, unsafe_allow_html=True)
-with col1:
-    submit = st.button(label='ทำนาย', type="primary", on_click=click_button, help='กดปุ่มเพื่อทำนายผลลัพธ์')
-    #submit = st.button(label='ทำนาย', on_click=click_button, help='กดปุ่มเพื่อทำนายผลลัพธ์')
-    
     if submit:
         if final_result_asfloat < 50.0:
          st.markdown(
