@@ -269,7 +269,8 @@ pre_prediction = check_NO()
     #print(pre_prediction.dtypes)
     #print(pre_prediction.head())
 
-LOG_MODEL_PATH = 'logistic_regression_model.pkl'
+LOG_MODEL_PATH = 'best_model_logistic.pkl'
+#LOG_MODEL_PATH = 'logistic_regression_model.pkl'
 
 with open(LOG_MODEL_PATH, 'rb') as f:
         logistic_regression_model = pickle.load(f)
